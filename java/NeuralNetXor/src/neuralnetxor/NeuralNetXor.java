@@ -85,7 +85,7 @@ public class NeuralNetXor {
         w3+=eta*(d-o)*o*(1-o)*w6*(h2)*(1-h2)*x1;
         w4+=eta*(d-o)*o*(1-o)*w6*(h2)*(1-h2)*x2;
         b1+=eta*(d-o)*o*(1-o)*w5*(h1)*(1-h1)* 1; 
-	 b2+=eta*(d-o)*o*(1-o)*w6*(h2)*(1-h2)* 1; 
+		b2+=eta*(d-o)*o*(1-o)*w6*(h2)*(1-h2)* 1; 
         return (d-o);
     }
     
