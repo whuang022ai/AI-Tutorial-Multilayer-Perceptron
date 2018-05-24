@@ -8,5 +8,5 @@ This is a hard coding version of Sigmoid Multilayer Perceptron with 2 input *2 h
 |---|---|
 | C++ 98 |[c++](./c++)|
 | Java |[java](./java)|
-
+| Python |[python](./python)|
 
