@@ -41,8 +41,6 @@ NeuralTrain<- function(X1,X2,answer){
   eval.parent(substitute(w6 <- w6+learning_rate * (answer - output)*output*(1-output)*h2))
   eval.parent(substitute(b3 <- b3+ learning_rate * (answer - output)*output*(1-output)*1))
   #hidden layer->input layer
-  
-  #learning_rate*(answer-output)*output*(1-output)*w5*(h1)*(1-h1)*x1
   eval.parent(substitute(w1 <- w1 + learning_rate * (answer - output)*output*(1-output)*w5*(h1)*(1-h1)*X1))
   eval.parent(substitute(w2 <- w2 + learning_rate * (answer - output)*output*(1-output)*w5*(h1)*(1-h1)*X2))
   eval.parent(substitute(w3 <- w3 + learning_rate * (answer - output)*output*(1-output)*w6*(h2)*(1-h2)*X1))
