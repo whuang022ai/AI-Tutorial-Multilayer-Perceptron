@@ -6,12 +6,12 @@ CC       = gcc.exe
 WINDRES  = windres.exe
 OBJ      = main.o
 LINKOBJ  = main.o
-LIBS     = -L"D:/oCam/DevCppPortable/MinGW64/lib" -L"D:/oCam/DevCppPortable/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
-INCS     = -I"D:/oCam/DevCppPortable/MinGW64/include" -I"D:/oCam/DevCppPortable/MinGW64/x86_64-w64-mingw32/include" -I"D:/oCam/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
-CXXINCS  = -I"D:/oCam/DevCppPortable/MinGW64/include" -I"D:/oCam/DevCppPortable/MinGW64/x86_64-w64-mingw32/include" -I"D:/oCam/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/oCam/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+LIBS     = -L"D:/App/DevC++/DevCppPortable/MinGW64/lib" -L"D:/App/DevC++/DevCppPortable/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/App/DevC++/DevCppPortable/MinGW64/include" -I"D:/App/DevC++/DevCppPortable/MinGW64/x86_64-w64-mingw32/include" -I"D:/App/DevC++/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/App/DevC++/DevCppPortable/MinGW64/include" -I"D:/App/DevC++/DevCppPortable/MinGW64/x86_64-w64-mingw32/include" -I"D:/App/DevC++/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/App/DevC++/DevCppPortable/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
 BIN      = NeuralNetXor.exe
-CXXFLAGS = $(CXXINCS) -std=c++11
-CFLAGS   = $(INCS) -std=c++11
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
 RM       = rm.exe -f
 
 .PHONY: all all-before all-after clean clean-custom
